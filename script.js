@@ -1,9 +1,10 @@
-const appid = '2fc7f2a0800958ccdd66788bde858aa5';
+
+const API_KEY = '2fc7f2a0800958ccdd66788bde858aa5';
 $(document).ready(function (){
     
     $('button').click(function (){
         var a = $('#search-input').val();
-        var url = `https://api.openweathermap.org/data/2.5/weather?q=${a}&units=metric&appid=${appid}`
+        var url = `https://api.openweathermap.org/data/2.5/weather?q=${a}&units=metric&appid=${API_KEY}`
         $.getJSON(url, function (data){
             $('.card').show();
             $('.alert').hide();
