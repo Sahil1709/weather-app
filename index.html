@@ -11,6 +11,11 @@
 <body>
     <div class="container">
         <h2 class="text-center">Weather App</h2>
+        <div id="mainLoader" class="text-center" style="width: 100%;height: 100%;">
+            <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                
+              </div>
+        </div>
         <div class="row g-3 align-items-center">
             <div class="col-auto">
               <label for="search-input" class="col-form-label">Name</label>
@@ -21,6 +26,7 @@
             <button class="col-auto btn btn-primary" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
               </svg></button>
+            <div id="spinner" class="spinner-border"></div>
             <div class="col-auto">
               <span class="form-text">
                 Can be name of any place/city/country/area .
@@ -54,6 +60,7 @@
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="keys.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
